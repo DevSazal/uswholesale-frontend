@@ -1,0 +1,96 @@
+@media only screen and (max-width: 760px) {
+  .supplier-inner {
+    margin: unset;
+    padding: 10px 6px;
+  }
+
+  .supplier .supplier-inner .title a {
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 5px;
+  }
+
+  .title_link a {
+    font-size: 11px;
+  }
+
+  .inner-image img {
+    height: 50px;
+    width: 130px;
+  }
+  .inner1{
+    border-top: 1px solid #d4d4d4 !important;
+  }
+  .apparel-image{
+    height: 300px;
+    width: 300px;
+  }
+  .apparel-image img{
+    height: 300px;
+    width: 300px;
+  }
+  .ap h2{
+    width: 300px;
+  }
+  .trade-logo img {
+    height: 45px;
+    margin-left: 0;
+    margin-top: 26px;
+}
+.trade-shows .trade-logo p {
+    font-size: 12px;
+  }
+  .trade-image img {
+    width: 316px;
+    padding: 25px 0;
+}
+#header-ads img{
+  margin-top: 10px;
+  margin-right: 7px;
+  height: 72px;
+  width: 100px;
+}
+#header-ads{
+  margin: unset;
+}
+.selectBox-dropdown{
+  font-size: 10px;
+  min-width: unset;
+}
+#home-search form .text{
+  width: unset;
+  font-size: 11px;
+
+}
+#home-search form .sbutton{
+  width: 0;
+}
+#cssmenu .menu-right .menu-join{
+  margin: unset;
+  padding: 0 10px;
+}
+.menu-right{
+text-align: center;
+}
+.home-slide{
+
+}
+.slide-bg{
+
+}
+.owl-stage-outer{
+  height: 150px;
+}
+
+/* supplier page */
+#selectplan ul li{
+float: none;
+display: block;
+margin: 0;
+width: 100%;
+}
+#connect ul li{
+float: none;
+    display: block;
+    margin: 30px 0 0 0;
+    width: 100%;
