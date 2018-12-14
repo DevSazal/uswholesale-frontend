@@ -1,0 +1,8 @@
+{
+  "scripts":{
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
