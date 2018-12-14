@@ -881,7 +881,6 @@ header {
   border-radius: 0;
   background: $color-white;
   box-shadow: none;
-  color: $default-font-color;
   width: 50rem;
   height: 4rem;
   line-height: normal;
@@ -890,6 +889,9 @@ header {
   font-weight: 400;
   &:focus {
     outline: none;
+  }
+  &::placeholder {
+    color: $default-font-color;
   }
 }
 
@@ -904,7 +906,7 @@ header {
   font-size: $default-font-size;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $color-white;
   text-align: left;
   width: 12rem;
   height: 4rem;
@@ -927,17 +929,16 @@ header {
   margin-right: -0.3rem;
   min-width: 17rem;
   position: relative;
-  color: $default-font-color;
+  //   color: $default-font-color;
   border: 1px solid $color-primary;
   border-right: none;
-
+  font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 
   border-radius: 0.6rem;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-
   height: 4rem;
   line-height: 3.8rem;
   text-decoration: none;

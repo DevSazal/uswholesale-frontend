@@ -675,7 +675,6 @@ header {
   border-radius: 0;
   background: #fff;
   box-shadow: none;
-  color: #313235;
   width: 50rem;
   height: 4rem;
   line-height: normal;
@@ -684,6 +683,8 @@ header {
   font-weight: 400; }
   #home-search form .text:focus {
     outline: none; }
+  #home-search form .text::placeholder {
+    color: #313235; }
 
 #home-search form .sbutton {
   padding: 0 0 0 2.8rem;
@@ -696,7 +697,7 @@ header {
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   text-align: left;
   width: 12rem;
   height: 4rem;
@@ -716,9 +717,9 @@ header {
   margin-right: -0.3rem;
   min-width: 17rem;
   position: relative;
-  color: #313235;
   border: 1px solid #55c57a;
   border-right: none;
+  font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0.6rem;
