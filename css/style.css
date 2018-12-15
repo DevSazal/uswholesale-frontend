@@ -333,6 +333,30 @@
   bottom: 30px;
   transform: rotate(-225deg); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+  overflow: hidden; }
+  .feature-box__image {
+    transition: all 0.2s; }
+  .feature-box__link {
+    color: #2998ff; }
+    .feature-box__link:hover {
+      color: #ff7730; }
+  .feature-box__link:hover ~ .feature-box__title {
+    color: #313235; }
+  .feature-box:hover {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15); }
+  .feature-box:hover .feature-box__title {
+    color: #55c57a; }
+  .feature-box:hover .feature-box__image {
+    transform: scale(1.1); }
+
 @font-face {
   font-family: "porto";
   src: url("../fonts/porto6e1d.eot?64334846");
@@ -1128,7 +1152,7 @@ header {
       overflow: hidden; }
 
 /*===========================================================
-       -         Deals       -
+       -         Promo       -
 =============================================================*/
 #promo {
   padding: 10rem 0;
@@ -1156,6 +1180,15 @@ header {
     background: #0999ff;
     border: 1px solid #d6cccc;
     color: white; }
+
+/*===========================================================
+       -         Promo       -
+=============================================================*/
+#suppliers {
+  padding: 10rem 0;
+  background-color: #fff; }
+  #suppliers .col-md-2 {
+    width: 19.66666667%; }
 
 /*===========================================================
        -         Banner         -

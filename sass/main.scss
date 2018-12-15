@@ -6,6 +6,7 @@
 @import "./components/button";
 @import "./components/card";
 @import "./components/ribbon";
+@import "./components/feature-box";
 
 @font-face {
   font-family: "porto";
@@ -1017,7 +1018,7 @@ header {
 }
 
 /*===========================================================
-       -         Deals       -
+       -         Promo       -
 =============================================================*/
 #promo {
   padding: 10rem 0;
@@ -1051,6 +1052,17 @@ header {
     background: #0999ff;
     border: 1px solid #d6cccc;
     color: white;
+  }
+}
+
+/*===========================================================
+       -         Promo       -
+=============================================================*/
+#suppliers {
+  padding: 10rem 0;
+  background-color: $color-white;
+  .col-md-2 {
+    width: 19.66666667%;
   }
 }
 

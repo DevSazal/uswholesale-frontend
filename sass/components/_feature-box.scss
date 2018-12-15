@@ -1,0 +1,31 @@
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+  overflow: hidden;
+  &__image {
+    transition: all 0.2s;
+  }
+  &__link {
+    color: $color-tertiary-light;
+    &:hover {
+      color: $color-secondary-dark;
+    }
+  }
+  &__link:hover ~ &__title {
+    color: $default-font-color;
+  }
+  &:hover {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+  }
+  &:hover &__title {
+    color: $color-primary;
+  }
+  &:hover &__image {
+    transform: scale(1.1);
+  }
+}
