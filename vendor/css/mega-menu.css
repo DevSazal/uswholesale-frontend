@@ -22,11 +22,11 @@
 @media screen and (min-width: 768px) {
   .home-slider {
     margin-bottom: 3rem;
-    height: 373px
+    height: 37.3rem;
   }
 
   .home-slide {
-    height: 373px
+    height: 37.3rem;
   }
 
   .home-slide-content {
@@ -107,10 +107,10 @@
   width: 100%;
   height: auto;
   background-color: #ccc;
-  height: 400px;
+  height: 465px;
 }
 .home-slide img{
-  height: 400px;
+  height: 465px;
 }
 
 .home-slide .slide-bg, .category-slide .slide-bg {
@@ -256,8 +256,11 @@
   left: 3.4rem;
   bottom: 3.4rem;
   margin: 0;
-  line-height: 0
+  line-height: 0;
+  }
 }
+.owl-dot{
+  
 }
 
 
@@ -970,4 +973,7 @@
 .sticky-header.fixed-nav .container {
   margin: 0 auto;
   padding-left: 1.5rem
+}
+.owl-dot{
+  outline: none;
 }

@@ -1,24 +1,11 @@
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-primary: #55c57a;
+@import "./abstracts/variables";
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+@import "./base/typography";
+@import "./base/utilities";
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-$color-grey-light-3: #dbe0e4;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-white: #fff;
-$color-black: #000;
-
-$default-font-color: #313235;
-$default-font-size: 1.5rem;
+@import "./components/button";
+@import "./components/card";
+@import "./components/ribbon";
 
 @font-face {
   font-family: "porto";
@@ -47,13 +34,12 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #edf0f3;
   color: $default-font-color;
   font: normal 400 1.4rem / 1.8 "Open Sans", sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  background: #edf0f3;
 }
 
 body:not(.loaded) > *:not(.loading-overlay) {
@@ -490,7 +476,6 @@ header {
   background: #333;
   transition: all 0.25s ease;
 }
-
 #cssmenu ul ul li:hover {
 }
 
@@ -887,11 +872,12 @@ header {
   font-family: "Open Sans", sans-serif;
   font-size: $default-font-size;
   font-weight: 400;
+  color: $color-grey-dark-2;
   &:focus {
     outline: none;
   }
   &::placeholder {
-    color: $default-font-color;
+    color: $color-grey-dark-2;
   }
 }
 
@@ -935,6 +921,7 @@ header {
   font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
+  color: $color-grey-dark-2;
 
   border-radius: 0.6rem;
   border-top-right-radius: 0 !important;
@@ -952,8 +939,124 @@ header {
 }
 
 /*===========================================================
+       -         Categories Slider         -
+=============================================================*/
+
+#categories-slider {
+  padding: 8rem 0;
+  .sidebar-home {
+    margin: 0 !important;
+    .side-menu-container {
+    }
+  }
+  .home-banner {
+    margin: 0 !important;
+
+    .home-slide {
+      .home-slide-content {
+        p {
+        }
+        a {
+          padding: 0.7rem 2rem;
+          font-weight: 400;
+          font-size: $default-font-size;
+          min-width: 112px;
+          border-radius: 0.1rem;
+        }
+      }
+    }
+  }
+  .main-add-container {
+    .add__card {
+      padding: 2rem;
+      padding: 20px;
+      margin: 0;
+      background: #ffffff;
+      width: 100%;
+      height: 21.6rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-radius: 2px;
+      &:hover {
+        transform: translateY(-2px);
+      }
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+      &--image-container {
+        width: 100%;
+        height: 10rem;
+      }
+      &--image {
+        width: 100%;
+        height: 100%;
+      }
+      &--heading {
+        display: block;
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 24px;
+        height: 24px;
+        font-weight: 600;
+        color: #0f497b;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      &--paragraph {
+        display: block;
+        font-size: 13px;
+        line-height: 18px;
+        height: 36px;
+        font-weight: 400;
+        color: #515255;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+/*===========================================================
+       -         Deals       -
+=============================================================*/
+#promo {
+  padding: 10rem 0;
+  background-color: $color-white;
+  /********************/
+  /*  PROMO BOXES     */
+  /********************/
+  .home-promobox {
+    padding: 6px 0 0 0;
+    background: white;
+    margin-bottom: 15px;
+  }
+
+  .home-promobox-inner {
+    position: relative;
+    padding: 20px 20px 30px 20px;
+    margin: 0;
+    background: #ffffff;
+  }
+
+  /* .home-promobox .home-promobox-inner p {
+    padding-bottom: 15px;
+  } */
+  .home-promobox .home-promobox-inner .b {
+    background: unset;
+    border: 1px solid #d6cccc;
+    transition: 0.5s;
+  }
+
+  .home-promobox .home-promobox-inner .b:hover {
+    background: #0999ff;
+    border: 1px solid #d6cccc;
+    color: white;
+  }
+}
+
+/*===========================================================
        -         Banner         -
-    =============================================================*/
+=============================================================*/
 .sam {
   background: url(../vendor/images/slider/slide-1.jpg);
 }
@@ -1289,119 +1392,6 @@ header {
   color: #fff;
   text-decoration: none;
   opacity: 1;
-}
-
-/********************/
-/*  PROMO BOXES     */
-/********************/
-.ribbon {
-  position: absolute;
-  right: -5px;
-  top: -5px;
-  z-index: 1;
-  overflow: hidden;
-  width: 110px;
-  height: 110px;
-  text-align: right;
-}
-
-.ribbon span {
-  font-size: 10px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  width: 135px;
-  display: block;
-  background: #79a70a;
-  background: linear-gradient(#ff8200 0%, #ff7200 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 31px;
-  right: -26px;
-}
-
-.ribbon.blue span {
-  background: linear-gradient(#1578bd 0%, #1578bd 100%);
-}
-
-.ribbon.darkblue span {
-  background: linear-gradient(#15467a 0%, #15467a 100%);
-}
-
-.ribbon span::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 100%;
-  z-index: -1;
-  border-left: 3px solid #ff7200;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #ff7200;
-}
-
-.ribbon.blue span::before {
-  border-left: 3px solid #1578bd;
-  border-top: 3px solid #1578bd;
-}
-
-.ribbon.darkblue span::before {
-  border-left: 3px solid #15467a;
-  border-top: 3px solid #15467a;
-}
-
-.ribbon span::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  top: 100%;
-  z-index: -1;
-  border-left: 3px solid transparent;
-  border-right: 3px solid #ff7200;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #ff7200;
-}
-
-.ribbon.blue span::after {
-  border-right: 3px solid #1578bd;
-  border-top: 3px solid #1578bd;
-}
-
-.ribbon.darkblue span::after {
-  border-right: 3px solid #15467a;
-  border-top: 3px solid #15467a;
-}
-
-.home-promobox {
-  padding: 6px 0 0 0;
-  background: white;
-  margin-bottom: 15px;
-}
-
-.home-promobox-inner {
-  position: relative;
-  padding: 20px 20px 30px 20px;
-  margin: 0;
-  background: #ffffff;
-}
-
-/* .home-promobox .home-promobox-inner p {
-    padding-bottom: 15px;
-  } */
-.home-promobox .home-promobox-inner .b {
-  background: unset;
-  border: 1px solid #d6cccc;
-  transition: 0.5s;
-}
-
-.home-promobox .home-promobox-inner .b:hover {
-  background: #0999ff;
-  border: 1px solid #d6cccc;
-  color: white;
 }
 
 /*===========================================================
@@ -1979,58 +1969,4 @@ header {
 
 #selectplan p.center.ntm {
   margin: 0;
-}
-
-.ribbon {
-  position: absolute;
-  left: -7px;
-  top: -8px;
-  z-index: 1;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
-  text-align: right;
-}
-
-.ribbon span {
-  font-size: 13px;
-  font-weight: 600;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 22px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  width: 110px;
-  display: block;
-  background: #79a70a;
-  background: linear-gradient(#42b74c 0%, #42b74c 100%);
-  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 19px;
-  left: -21px;
-}
-
-.ribbon span::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 100%;
-  z-index: -1;
-  border-left: 3px solid #42b74c;
-  border-right: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #42b74c;
-}
-
-.ribbon span::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  top: 100%;
-  z-index: -1;
-  border-left: 3px solid transparent;
-  border-right: 3px solid #42b74c;
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid #42b74c;
 }
