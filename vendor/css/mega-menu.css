@@ -634,7 +634,7 @@
 }
 
 .menu.menu-vertical li {
-  transition: background 0s
+  transition: background 0s;
 }
 
 .menu.menu-vertical li.megamenu-container {
@@ -681,13 +681,23 @@
 }
 
 .menu.menu-vertical>li:hover, .menu.menu-vertical>li.show, .menu.menu-vertical>li.active {
-  background-color: #08c
+  background-image: linear-gradient(
+    to right,
+    #7ed56f,
+    #55c57a,
+    #55c57a
+  );
 }
 
 .menu.menu-vertical>li:hover>a, .menu.menu-vertical>li.show>a, .menu.menu-vertical>li.active>a {
   color: #fff;
-  border-color: #08c;
-  background-color: #08c
+  
+  background-image: linear-gradient(
+    to right,
+    #7ed56f,
+    #55c57a,
+    #55c57a
+  );
 }
 
 @media screen and (min-width: 992px) {

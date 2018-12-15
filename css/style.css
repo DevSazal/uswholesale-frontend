@@ -130,8 +130,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
-  cursor: pointer; }
+  height: 52rem; }
   .card__side {
     height: 52rem;
     transition: all 0.8s ease;
