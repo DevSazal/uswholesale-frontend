@@ -8,6 +8,8 @@
 @import "./components/ribbon";
 @import "./components/feature-box";
 
+@import "./layout/_mega-menu";
+
 @font-face {
   font-family: "porto";
   src: url("../fonts/porto6e1d.eot?64334846");
@@ -23,6 +25,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
 }
