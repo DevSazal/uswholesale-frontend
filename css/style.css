@@ -364,6 +364,23 @@
   .feature-box:hover .feature-box__image {
     transform: scale(1.1); }
 
+.allcategory__list {
+  padding-bottom: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  column-count: 6;
+  column-gap: 2rem;
+  border-bottom: 1px solid #dbe0e4; }
+  .allcategory__list li {
+    padding: 0;
+    margin: 0 0 5px 0; }
+    .allcategory__list li a {
+      color: #2998ff;
+      text-decoration: none; }
+      .allcategory__list li a:hover {
+        color: #ff7730; }
+
 @media screen and (min-width: 576px) {
   .home-slide-content h1 {
     font-size: 4.4rem; }
@@ -1197,6 +1214,9 @@
 .section__steps {
   padding: 3rem 0; }
 
+.section__allcategory {
+  padding: 3rem 0; }
+
 @font-face {
   font-family: "porto";
   src: url("../fonts/porto6e1d.eot?64334846");
@@ -1218,7 +1238,7 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  background-color: #edf0f3;
+  background-color: #fff;
   color: #313235;
   font: normal 400 1.4rem / 1.8 "Open Sans", sans-serif;
   -moz-osx-font-smoothing: grayscale;

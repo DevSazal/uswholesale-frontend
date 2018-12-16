@@ -7,6 +7,7 @@
 @import "./components/card";
 @import "./components/ribbon";
 @import "./components/feature-box";
+@import "./components/allcategory__list";
 
 @import "./layout/_mega-menu";
 @import "./layout/page-list";
@@ -41,7 +42,7 @@ html {
 }
 
 body {
-  background-color: #edf0f3;
+  background-color: #fff;
   color: $default-font-color;
   font: normal 400 1.4rem / 1.8 "Open Sans", sans-serif;
   -moz-osx-font-smoothing: grayscale;
