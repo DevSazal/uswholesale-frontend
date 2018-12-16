@@ -1,0 +1,26 @@
+.pages {
+  border-bottom: 1px solid $color-grey-light-3;
+  &__list {
+  }
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__item:last-child &__link {
+    font-weight: 700;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      font-size: $default-font-size;
+      color: $default-font-color;
+      transition: all 0.3s;
+    }
+    &:hover,
+    &:active {
+      color: $color-secondary-dark;
+    }
+  }
+}

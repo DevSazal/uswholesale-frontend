@@ -58,6 +58,9 @@
 .u-margin-top-medium {
   margin-top: 4rem !important; }
 
+.u-margin-top-small {
+  margin-top: 2rem !important; }
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -187,6 +190,10 @@
       -webkit-box-decoration-break: clone; }
       .card__heading--span--1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__heading--span--2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__heading--span--3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card__detail {
     padding: 3rem; }
     .card__detail ul {
@@ -1172,6 +1179,24 @@
   transform: scaleY(1);
   width: 100%; }
 
+.pages {
+  border-bottom: 1px solid #dbe0e4; }
+  .pages__item {
+    display: inline-block; }
+    .pages__item:not(:last-child) {
+      margin-right: 2rem; }
+  .pages__item:last-child .pages__link {
+    font-weight: 700; }
+  .pages__link:link, .pages__link:visited {
+    font-size: 1.5rem;
+    color: #313235;
+    transition: all 0.3s; }
+  .pages__link:hover, .pages__link:active {
+    color: #ff7730; }
+
+.section__steps {
+  padding: 3rem 0; }
+
 @font-face {
   font-family: "porto";
   src: url("../fonts/porto6e1d.eot?64334846");
@@ -1427,6 +1452,9 @@ header {
       padding: 10px;
       float: left;
       width: 25%; }
+      header #cssmenu .logo img {
+        height: 7rem;
+        width: 9rem; }
     header #cssmenu .css-ul {
       float: left;
       margin-top: 16px; }
@@ -1811,6 +1839,23 @@ header {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box; }
+  #home-search .suggest {
+    font-size: 1.5rem;
+    color: #313235; }
+    #home-search .suggest__tag {
+      margin-right: 2rem; }
+    #home-search .suggest__list {
+      display: inline-block; }
+    #home-search .suggest__item {
+      display: inline-block; }
+      #home-search .suggest__item:not(:last-child) {
+        margin-right: 2rem; }
+    #home-search .suggest__link:link, #home-search .suggest__link:visited {
+      font-size: 1.5rem;
+      color: #313235;
+      transition: all 0.3s; }
+    #home-search .suggest__link:hover, #home-search .suggest__link:active {
+      color: #ff7730; }
 
 #home-search ul.sb-promos {
   display: none; }
@@ -1841,7 +1886,7 @@ header {
   margin: 0; }
 
 #home-search form .text {
-  padding: 5px 10px 5px 10px;
+  padding: 4px 10px 5px 10px;
   border-top: 1px solid #55c57a;
   border-bottom: 1px solid #55c57a;
   border-left: 0;

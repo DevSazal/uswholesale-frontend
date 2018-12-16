@@ -9,6 +9,9 @@
 @import "./components/feature-box";
 
 @import "./layout/_mega-menu";
+@import "./layout/page-list";
+
+@import "./pages/category";
 
 @font-face {
   font-family: "porto";
@@ -327,6 +330,10 @@ header {
       padding: 10px;
       float: left;
       width: 25%;
+      img {
+        height: 7rem;
+        width: 9rem;
+      }
     }
     .css-ul {
       float: left;
@@ -827,6 +834,34 @@ header {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  .suggest {
+    font-size: $default-font-size;
+    color: $default-font-color;
+    &__tag {
+      margin-right: 2rem;
+    }
+    &__list {
+      display: inline-block;
+    }
+    &__item {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+    &__link {
+      &:link,
+      &:visited {
+        font-size: $default-font-size;
+        color: $default-font-color;
+        transition: all 0.3s;
+      }
+      &:hover,
+      &:active {
+        color: $color-secondary-dark;
+      }
+    }
+  }
 }
 
 #home-search ul.sb-promos {
@@ -863,7 +898,7 @@ header {
 }
 
 #home-search form .text {
-  padding: 5px 10px 5px 10px;
+  padding: 4px 10px 5px 10px;
   border-top: 1px solid $color-primary;
   border-bottom: 1px solid $color-primary;
   border-left: 0;
