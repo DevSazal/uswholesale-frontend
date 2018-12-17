@@ -6,6 +6,15 @@
 }
 .section-categories {
   padding: 2rem 0;
+  .tab-checkbox-container {
+    display: table;
+    width: 100%;
+    padding: 1rem 0;
+    .input-group {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 }
 .section-checkbox__container {
   margin-bottom: 2rem;
@@ -17,10 +26,25 @@
     font-weight: 500;
   }
 }
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
   border: 1px solid $color-primary;
   background: $color-primary;
   color: $color-white;
+}
+.section-related-products {
+  padding: 3rem 0;
+  background-color: $color-grey-light-1;
+}
+.section-promo-sub {
+  padding: 10rem 0;
+  .card-promo {
+    height: 100%;
+  }
+  .card-promo__side {
+    position: relative;
+    height: 100%;
+  }
 }

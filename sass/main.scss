@@ -5,6 +5,7 @@
 
 @import "./components/button";
 @import "./components/card";
+@import "./components/card-promo";
 @import "./components/ribbon";
 @import "./components/feature-box";
 @import "./components/allcategory__list";
@@ -14,6 +15,7 @@
 
 @import "./layout/_mega-menu";
 @import "./layout/page-list";
+@import "./layout/pagination-box";
 
 @import "./pages/category";
 
@@ -45,7 +47,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: $color-white;
   color: $default-font-color;
   font: normal 400 1.4rem / 1.8 "Open Sans", sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -1069,151 +1071,6 @@ header {
   /********************/
   /*  PROMO BOXES     */
   /********************/
-  .card-promo {
-    // FUNCTIONALITY
-    perspective: 150rem;
-    -moz-perspective: 150rem;
-    position: relative;
-    height: 52rem;
-
-    &__side {
-      height: 52rem;
-      transition: all 0.8s ease;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      border-radius: 3px;
-      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-      transition: all 0.2s;
-
-      &:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 0.5rem 2rem rgba($color-black, 0.1);
-      }
-      &--front {
-        background-color: $color-white;
-      }
-      &--ribbon-1 {
-        &::before,
-        &::after {
-          border: 5px solid $color-secondary-dark;
-        }
-        span {
-          background-image: linear-gradient(
-            to right bottom,
-            $color-secondary-light,
-            $color-secondary-dark
-          );
-        }
-      }
-      &--ribbon-2 {
-        &::before,
-        &::after {
-          border: 5px solid $color-primary-dark;
-        }
-        span {
-          background-image: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-          );
-        }
-      }
-      &--ribbon-3 {
-        &::before,
-        &::after {
-          border: 5px solid $color-tertiary-dark;
-        }
-        span {
-          background-image: linear-gradient(
-            to right bottom,
-            $color-tertiary-light,
-            $color-tertiary-dark
-          );
-        }
-      }
-    }
-
-    &__picture {
-      height: 23rem;
-      background-size: cover;
-      background-blend-mode: screen;
-      background-repeat: no-repeat;
-      width: 100%;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      &--1 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-secondary-light,
-            $color-secondary-dark
-          ),
-          url(../vendor/images/blog/post-1.jpg);
-      }
-      &--2 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-          ),
-          url(../vendor/images/blog/post-2.jpg);
-      }
-      &--3 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-tertiary-light,
-            $color-tertiary-dark
-          ),
-          url(../vendor/images/blog/post-3.jpg);
-      }
-    }
-    &__heading {
-      font-size: 2.8rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      color: $color-white;
-      position: absolute;
-      top: 12rem;
-      right: 2rem;
-      text-align: right;
-      width: 75%;
-      &--span {
-        padding: 0rem 1.5rem;
-        -webkit-box-decoration-break: clone;
-        &--1 {
-          background-image: linear-gradient(
-            to right bottom,
-            $color-secondary-light,
-            $color-secondary-dark
-          );
-        }
-        &--2 {
-          background-image: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-          );
-        }
-        &--3 {
-          background-image: linear-gradient(
-            to right bottom,
-            $color-tertiary-light,
-            $color-tertiary-dark
-          );
-        }
-      }
-    }
-    &__detail {
-      padding: 3rem;
-      p {
-        font-size: 1.5rem;
-        font-family: inherit;
-        /* text-align: justify; */
-        /* letter-spacing: 1px; */
-        line-height: 25px;
-      }
-    }
-  }
 }
 
 /*===========================================================
