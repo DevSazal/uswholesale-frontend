@@ -389,7 +389,8 @@
   .styled-checkbox + label {
     position: relative;
     cursor: pointer;
-    padding: 0; }
+    padding: 0;
+    font-weight: normal; }
   .styled-checkbox + label:before {
     content: "";
     margin-right: 1rem;
@@ -454,6 +455,44 @@
 
 .overflow {
   height: 100%; }
+
+.product__box {
+  border: 1px solid #55c57a;
+  padding: 2rem;
+  margin-top: 1rem; }
+  .product__box--paragraph {
+    font-size: 1.3rem;
+    color: #777; }
+  .product__box--list {
+    display: table;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    width: 100%;
+    line-height: 18px;
+    overflow: hidden; }
+    .product__box--list dt {
+      display: table-cell;
+      padding: 3px 0;
+      margin: 0;
+      color: #888888;
+      width: 110px; }
+    .product__box--list dd {
+      display: table-cell;
+      padding: 3px 0;
+      margin: 0;
+      color: #333333; }
+  .product__box--imageContainer {
+    margin-top: 3rem; }
+  .product__box--link {
+    font-size: 1.2rem;
+    color: #ff7730; }
+  .product__box--button-review {
+    margin-top: 2rem; }
+    .product__box--button-review a:not(:last-child) {
+      margin-right: 2rem; }
+    .product__box--button-review a i {
+      font-size: 2rem; }
 
 @media screen and (min-width: 576px) {
   .home-slide-content h1 {
@@ -1296,6 +1335,18 @@
 
 .section-checkbox__container {
   margin-bottom: 2rem; }
+
+.nav-tabs {
+  border-bottom: 1px solid #55c57a; }
+  .nav-tabs a {
+    font-weight: 500; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: 1px solid #55c57a;
+  background: #55c57a;
+  color: #fff; }
 
 @font-face {
   font-family: "porto";

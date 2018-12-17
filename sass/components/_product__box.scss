@@ -1,0 +1,55 @@
+.product__box {
+  border: 1px solid $color-primary;
+  padding: 2rem;
+  margin-top: 1rem;
+  &--info {
+  }
+  &--paragraph {
+    font-size: 1.3rem;
+    color: $color-grey-dark;
+  }
+  &--sign {
+  }
+  &--list {
+    display: table;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    width: 100%;
+    line-height: 18px;
+    overflow: hidden;
+    dt {
+      display: table-cell;
+      padding: 3px 0;
+      margin: 0;
+      color: #888888;
+      width: 110px;
+    }
+    dd {
+      display: table-cell;
+      padding: 3px 0;
+      margin: 0;
+      color: #333333;
+    }
+  }
+  &--imageContainer {
+    margin-top: 3rem;
+  }
+  &__image-box {
+  }
+  &--link {
+    font-size: 1.2rem;
+    color: $color-secondary-dark;
+  }
+  &--button-review {
+    margin-top: 2rem;
+    a {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}
