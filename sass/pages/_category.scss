@@ -15,6 +15,49 @@
       vertical-align: middle;
     }
   }
+  .tab-radio-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    span {
+      display: inline-block;
+      flex: 0.5;
+      margin-top: -3px;
+    }
+    .form__radio-group {
+      display: inline-block;
+      flex: 1;
+      .form__radio-label {
+        font-size: 1.4rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 2.5rem;
+        font-weight: normal;
+
+        .form__radio-button {
+          height: 2rem;
+          width: 2rem;
+          border: 5px solid #55c57a;
+          border-radius: 50%;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+      }
+    }
+  }
+  .buyer-list {
+    .buyer-item {
+      padding: 1.5rem 2rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid #222;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 .section-checkbox__container {
   margin-bottom: 2rem;

@@ -37,11 +37,40 @@
       );
     }
   }
+  &--main-title {
+    color: $color-tertiary-light;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      color: $color-secondary-dark;
+    }
+  }
+  &--sub-title {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      color: $color-secondary-dark;
+    }
+  }
   &--info {
   }
   &--paragraph {
     font-size: 1.3rem;
     color: $color-grey-dark;
+  }
+  &--location {
+    font-size: 1.3rem;
+    color: $color-grey-dark;
+    display: flex;
+    img {
+      margin-left: 1rem;
+    }
   }
   &--sign {
   }
@@ -78,6 +107,15 @@
   }
   &--button-review {
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    .verify {
+      display: flex;
+      img {
+        margin-right: 0.3rem;
+      }
+    }
     a {
       &:not(:last-child) {
         margin-right: 2rem;

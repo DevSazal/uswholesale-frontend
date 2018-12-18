@@ -1,0 +1,44 @@
+.buyer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left-box {
+    flex: 2;
+  }
+  .box-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .image-box {
+      height: auto;
+      width: 26%;
+      margin-right: 2rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  &__right-box {
+    flex: 1;
+    .list {
+      text-align: right;
+    }
+  }
+  &__main-title {
+    font-weight: 700;
+    font-size: $default-font-size;
+  }
+  &__location {
+    img {
+      margin-right: 5px;
+    }
+  }
+  .grey {
+    color: #888888;
+  }
+  &__paragraph {
+    margin-top: 1rem;
+  }
+}
