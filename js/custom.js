@@ -91,22 +91,12 @@
     scrollbarDiv.innerHTML = "You need Webkit browser to run this code";
   }
 })();
-
 (function($) {
   $(document).ready(function() {
-    var auth_value = $("input[name=auth]:checked").val();
-    renderDom(auth_value);
+    authPage("login");
   });
 })(jQuery);
-
-(function($) {
-  $('input[name="auth"]:radio').change(function() {
-    var auth_value = $("input[name='auth']:checked").val();
-    renderDom(auth_value);
-  });
-})(jQuery);
-
-function renderDom(auth_value) {
+function authPage(auth_value) {
   if (auth_value === "login") {
     $("#login").show();
     $("#signup").hide();

@@ -1,27 +1,47 @@
 .form {
+  .select-box {
+    display: flex;
+    align-items: flex-end;
+  }
+  .submit-button {
+    text-align: left;
+  }
   &__group:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__select {
+    border-radius: 0;
+    border: none;
+    background-color: rgba($color-white, 0.5);
+    color: inherit;
+    padding: 1rem 2rem;
+    width: 98%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    border-bottom: 1px solid $color-black;
   }
   &__input {
     font-size: 1.5rem;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     font-family: inherit;
     background-color: rgba($color-white, 0.5);
     border: none;
-    border-bottom: 3px solid transparent;
-    border-radius: 2px;
-    width: 80%;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    width: 98%;
     display: block;
     color: inherit;
     transition: all 0.3s;
+    border-bottom: 1px solid $color-black;
     &:focus {
       outline: none;
       box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
-      border-bottom: 3px solid $color-primary;
+      border-bottom: 1px solid $color-primary;
     }
 
     &:focus:invalid {
-      border-bottom: 3px solid $color-secondary-dark;
+      border-bottom: 1px solid $color-secondary-dark;
     }
 
     &::-webkit-input-placeholder {

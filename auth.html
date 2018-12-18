@@ -65,105 +65,93 @@
   <main>
     <section class="section-auth">
         <div class="container">
+            <div class="u-center-text u-margin-bottom-small">
+                <h2 class="heading-secondary">
+                    Sign In or Join Now
+                </h2>
+                <p> You must be signed in to continue. Sign In or Join below.</p>
+            </div>
             <div class="row">
-                <div class="auth-controller text-center">
-                    <!-- <div class="u-center-text u-margin-bottom-small">
-                        <h2 class="heading-secondary">
-                            Sign In or Join Now
-                        </h2>
-                        <p>You must be signed in to continue. Sign In or Join below.</p>
-                    </div> -->
-                    <form method="POST"  id="register-form">
-                    <div class="signup-content">
-                            <div class="signup-form">
-                                <h2 class="form-title">Sign up</h2>
-                                    
-                                    <div class="form-group">
-                                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                        <input type="text" name="name" id="name" placeholder="Your Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                        <input type="email" name="email" id="email" placeholder="Your Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                        <input type="password" name="pass" id="pass" placeholder="Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                        <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
-                                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                                    </div>
-                                    <div class="form-group form-button">
-                                        <input type="submit" name="signup" id="signup" class="form-submit" value="Register">
-                                    </div>
-                               
+                <div class="auth-controller text-center" >
+                    <form id="login" >
+                        <div class="signin-image">
+                            <figure><img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signin-image.jpg" alt="sing up image"></figure>
+                            <div class="form__group text-center u-margin-top-medium" style="margin-right: 3rem">
+                                <a  onclick="authPage('signup')" class="btn-orange">Create an account</a>
                             </div>
-                            <div class="signup-form">
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="name" id="name" placeholder="Your Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                    <input type="email" name="email" id="email" placeholder="Your Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                    <input type="password" name="pass" id="pass" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                    <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
-                                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                                </div>
-                               
-                                <a href="#" class="signup-image-link">I am already member</a>
+                        </div>
+                        <div class="signin-form u-margin-top-medium">
+                            <div class="form__group">
+                                <input type="text" id="name" class="form__input" placeholder="Your Username" required>
+                                <label for="name" class="form__label">Username</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" id="email" class="form__input" placeholder="Email" required>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                            <div class="form-group submit-button text-left">
+                                <button class="btn btn--green">Login &rarr;</button>
                             </div>
                         </div>
                     </form>
+                    <form method="POST" class="form"  id="signup">
+                      <div class="signup-content">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form__group">
+                                      <input type="text" id="name" class="form__input" placeholder="Your Username" required>
+                                      <label for="name" class="form__label">Username</label>
+                                  </div>
+                                  <div class="form__group">
+                                      <input type="email" id="email" class="form__input" placeholder="Email" required>
+                                      <label for="email" class="form__label">Email</label>
+                                  </div>
+                                  <div class="form__group">
+                                      <input type="password" id="password" class="form__input" placeholder="Password" required>
+                                      <label for="password" class="form__label">Password</label>
+                                  </div>
+                                  <div class="form__group">
+                                      <input type="confirm_password" id="confirm_password" class="form__input" placeholder="Confirm Password" required>
+                                      <label for="confirm_password" class="form__label">Confirm Password</label>
+                                  </div>
+                                  <div class="form-group submit-button">
+                                      <button class="btn btn--green">Register &rarr;</button>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form__group">
+                                      <input type="text" id="contact_name" class="form__input" placeholder="Contact Name" required>
+                                      <label for="contact_name" class="form__label">Contact Name</label>
+                                  </div>
+                                 
+                                  <div class="form__group">
+                                      <input type="text" id="company_name" class="form__input" placeholder="Company Name" required>
+                                      <label for="company_name" class="form__label">Company Name</label>
+                                  </div>
+                                 
+                                  <div class="form__group">
+                                      <input type="text" id="phone_number" class="form__input" placeholder="Phone Number" required>
+                                      <label for="phone_number" class="form__label">Phone Number</label>
+                                  </div>
+                                  <div class="form__group select-box">
+                                      <select name="country" class="form__select" id="">
+                                        <option disabled>Select Country</option>
+                                        <option value="">Bangladesh</option>
+                                        <option value="">Bangladesh</option>
+                                        <option value="">Bangladesh</option>
+                                      </select>
+                                      <label for="country" class="form__label">&nbsp;</label>                                     
+                                  </div>
+                                  <div class="form__group text-right u-margin-top-medium" style="margin-right: 3rem">
+                                    <a  onclick="authPage('login')" class="btn-orange">Im already a member</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </form>
                 </div>
-                <!-- <form action="#" class="form">
-                    <div class="u-margin-bottom-medium ">
-                        <h2 class="heading-secondary">
-                            Start looking now
-                        </h2>
-                    </div>
-                    <div class="form__group">
-                        <input type="text" id="name" class="form__input" placeholder="Your name" required>
-                        <label for="name" class="form__label">Your name</label>
-                    </div>
-                    <div class="form__group">
-                        <input type="email" id="email" class="form__input" placeholder="Email" required>
-                        <label for="email" class="form__label">Email</label>
-                    </div>
-                    <div class="form__group u-margin-bottom-medium">
-                        <div class="form__radio-group">
-                            <input type="radio" id="small" class="form__radio-input" name="size">
-                            <label for="small" class="form__radio-label">
-                               <span class="form__radio-button"></span>
-                                Small tour group
-                            </label>
-                        </div>
-                        <div class="form__radio-group">
-                            <input type="radio" id="large" class="form__radio-input" name="size">
-                            <label for="large" class="form__radio-label">
-                               <span class="form__radio-button"></span>
-                               large tour group
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn--green">Next step &rarr;</button>
-                    </div>
-                </form> -->
+             
+               
             </div>
         </div>
     </section>

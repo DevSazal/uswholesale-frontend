@@ -83,3 +83,26 @@
     transform: translateY(0);
   }
 }
+.btn-orange {
+  &:link,
+  &:visited {
+    color: $color-secondary-dark !important;
+    border-bottom: 1px solid $color-secondary-dark !important;
+    display: inline-block;
+    font-size: $default-font-size;
+    text-decoration: none;
+    padding: 3px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  &:hover {
+    background-color: $color-secondary-dark;
+    color: $color-white !important;
+    box-shadow: 0 1rem 2rem rgba($color-secondary-dark, 0.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-secondary-dark, 0.15);
+    transform: translateY(0);
+  }
+}
