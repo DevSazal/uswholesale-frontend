@@ -126,7 +126,10 @@
   background-color: #55c57a;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(85, 197, 122, 0.15);
-  transform: translateY(-2px); }
+  transform: translateY(-2px);
+  padding-left: 13px;
+  padding-right: 13px;
+  transition: all 0.5s; }
 
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(85, 197, 122, 0.15);
