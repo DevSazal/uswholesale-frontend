@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/css/check.css">
+  <!-- Owl Carosel css -->
+  <link rel="stylesheet" href="vendor/owl/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendor/css/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Website</title>
+
+</head>
+ 
+
+<body>
+
+  <!-- _______Starting of Navbar_________  -->
+  <header >
+    <div class="container" >
+      <nav id='cssmenu'>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul class="css-ul">
+          <li class='active'><a href='#'>HOME</a></li>
+          <li><a href='#'>PRODUCTS</a>
+            <ul>
+              <li><a href='#'>Product 1</a>
+                <ul>
+                  <li><a href='#'>Sub Product</a></li>
+                  <li><a href='#'>Sub Product</a></li>
+                </ul>
+              </li>
+              <li><a href='#'>Product 2</a>
+                <ul>
+                  <li><a href='#'>Sub Product</a></li>
+                  <li><a href='#'>Sub Product</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href='#'>BIO</a></li>
+          <li><a href='#'>VIDEO</a></li>
+        </ul>
+        <div class="menu-right">
+          <a href="supplier.html" class="menu-join">Supplier Registration</a>
+          <a href="#" class="menu-join">Buyer Registration</a>
+          <a href="#" class="menu-signin">Sign In</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section-auth">
+        <div class="container">
+            <div class="row">
+                <div class="auth-controller text-center">
+                    <!-- <div class="u-center-text u-margin-bottom-small">
+                        <h2 class="heading-secondary">
+                            Sign In or Join Now
+                        </h2>
+                        <p>You must be signed in to continue. Sign In or Join below.</p>
+                    </div> -->
+                    <form method="POST"  id="register-form">
+                    <div class="signup-content">
+                            <div class="signup-form">
+                                <h2 class="form-title">Sign up</h2>
+                                    
+                                    <div class="form-group">
+                                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                        <input type="text" name="name" id="name" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                        <input type="email" name="email" id="email" placeholder="Your Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                        <input type="password" name="pass" id="pass" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                        <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
+                                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                                    </div>
+                                    <div class="form-group form-button">
+                                        <input type="submit" name="signup" id="signup" class="form-submit" value="Register">
+                                    </div>
+                               
+                            </div>
+                            <div class="signup-form">
+                                <div class="form-group">
+                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                    <input type="text" name="name" id="name" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                    <input type="email" name="email" id="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                    <input type="password" name="pass" id="pass" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                    <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
+                                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                                </div>
+                               
+                                <a href="#" class="signup-image-link">I am already member</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <form action="#" class="form">
+                    <div class="u-margin-bottom-medium ">
+                        <h2 class="heading-secondary">
+                            Start looking now
+                        </h2>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" id="name" class="form__input" placeholder="Your name" required>
+                        <label for="name" class="form__label">Your name</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" class="form__input" placeholder="Email" required>
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="form__group u-margin-bottom-medium">
+                        <div class="form__radio-group">
+                            <input type="radio" id="small" class="form__radio-input" name="size">
+                            <label for="small" class="form__radio-label">
+                               <span class="form__radio-button"></span>
+                                Small tour group
+                            </label>
+                        </div>
+                        <div class="form__radio-group">
+                            <input type="radio" id="large" class="form__radio-input" name="size">
+                            <label for="large" class="form__radio-label">
+                               <span class="form__radio-button"></span>
+                               large tour group
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn--green">Next step &rarr;</button>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+    </section>
+  </main>
+ 
+  <footer class="footer">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="footer-ribbon">
+          Get in touch
+        </div><!-- End .footer-ribbon -->
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="widget">
+              <h4 class="widget-title">Contact Us</h4>
+              <ul class="contact-info">
+                <li>
+                  <span class="contact-info-label">Address:</span>123 Street Name, City, England
+                </li>
+                <li>
+                  <span class="contact-info-label">Phone:</span>Toll Free <a href="tel:">(123) 456-7890</a>
+                </li>
+                <li>
+                  <span class="contact-info-label">Email:</span> <a href="mailto:mail@example.com">mail@example.com</a>
+                </li>
+                <li>
+                  <span class="contact-info-label">Working Days/Hours:</span>
+                  Mon - Sun / 9:00AM - 8:00PM
+                </li>
+              </ul>
+              <div class="social-icons">
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div><!-- End .social-icons -->
+            </div><!-- End .widget -->
+          </div><!-- End .col-lg-3 -->
+
+          <div class="col-lg-9">
+            <div class="widget widget-newsletter">
+              <h4 class="widget-title">Subscribe newsletter</h4>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Get all the latest information on Events,Sales and Offers. Sign up for newsletter today</p>
+                </div><!-- End .col-md-6 -->
+
+                <div class="col-md-6">
+                  <form action="#">
+                    <input type="email" class="form-control" placeholder="Email address" required>
+
+                    <input type="submit" class="btn" value="Subscribe">
+                  </form>
+                </div><!-- End .col-md-6 -->
+              </div><!-- End .row -->
+            </div><!-- End .widget -->
+
+            <div class="row">
+              <div class="col-md-5">
+                <div class="widget">
+                  <h4 class="widget-title">My Account</h4>
+
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <ul class="links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                      </ul>
+                    </div><!-- End .col-sm-6 -->
+                    <div class="col-sm-6 col-md-5">
+                      <ul class="links">
+                        <li><a href="#">Orders History</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#" class="login-link">Login</a></li>
+                      </ul>
+                    </div><!-- End .col-sm-6 -->
+                  </div><!-- End .row -->
+                </div><!-- End .widget -->
+              </div><!-- End .col-md-5 -->
+
+              <div class="col-md-7">
+                <div class="widget">
+                  <h4 class="widget-title">Main Features</h4>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul class="links">
+                        <li><a href="#">Super Fast Magento Theme</a></li>
+                        <li><a href="#">1st Fully working Ajax Theme</a></li>
+                        <li><a href="#">20 Unique Homepage Layouts</a></li>
+                      </ul>
+                    </div><!-- End .col-sm-6 -->
+                    <div class="col-sm-6">
+                      <ul class="links">
+                        <li><a href="#">Powerful Admin Panel</a></li>
+                        <li><a href="#">Mobile & Retina Optimized</a></li>
+                      </ul>
+                    </div><!-- End .col-sm-6 -->
+                  </div><!-- End .row -->
+                </div><!-- End .widget -->
+              </div><!-- End .col-md-7 -->
+            </div><!-- End .row -->
+          </div><!-- End .col-lg-9 -->
+        </div><!-- End .row -->
+      </div><!-- End .container -->
+    </div><!-- End .footer-middle -->
+
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">BAZZAR &copy; 2018. All Rights Reserved</p>
+
+        <img src="img/payments.png" alt="payment methods" class="footer-payments">
+      </div><!-- End .footer-bottom -->
+    </div><!-- End .container -->
+  </footer><!-- End .footer -->
+
+
+  <script type="text/javascript" src="js/js.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Owl Carosel -->
+  <script src="vendor/owl/js/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    var owl = $('.slide #slide-inner');
+    owl.owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 15,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true
+    });
+  </script>
+  <script type="text/javascript">
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true
+    });
+  </script>
+
+  <!-- Main JS File -->
+  <script src="vendor/js/main.min.js"></script>
+
+
+</body>
+
+</html>

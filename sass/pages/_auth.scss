@@ -1,0 +1,93 @@
+.section-auth {
+  padding: 3rem 0;
+  .auth-controller {
+    width: 900px;
+    max-width: 1200px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    .signup-content {
+      padding: 75px 0;
+      display: flex;
+      .signup-form {
+        width: 50%;
+        overflow: hidden;
+        margin-left: 75px;
+        margin-right: 75px;
+        padding-left: 34px;
+        .form-title {
+          margin-bottom: 33px;
+          line-height: 1.66;
+          margin: 0;
+          padding: 0;
+          font-weight: bold;
+          color: #222;
+          font-family: Poppins;
+          font-size: 36px;
+        }
+        .form-group {
+          position: relative;
+          margin-bottom: 25px;
+          overflow: hidden;
+          label {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            color: #222;
+          }
+          input {
+            width: 100%;
+            display: block;
+            border: none;
+            border-bottom: 1px solid #999;
+            padding: 6px 30px;
+            font-family: inherit;
+            box-sizing: border-box;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+      .signup-image {
+        width: 50%;
+        overflow: hidden;
+        margin: 0 55px;
+        margin-top: 45px;
+        figure {
+          margin: 0;
+          margin-bottom: 50px;
+          text-align: center;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+        .signup-image-link {
+          font-size: 14px;
+          color: #222;
+          display: block;
+          text-align: center;
+          &:hover,
+          &:focus {
+            color: $color-secondary-dark;
+          }
+        }
+      }
+    }
+  }
+}

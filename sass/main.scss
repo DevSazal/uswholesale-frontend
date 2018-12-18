@@ -12,12 +12,14 @@
 @import "./components/checkbox";
 @import "./components/custom_scroll";
 @import "./components/product__box";
+@import "./components/form";
 
 @import "./layout/_mega-menu";
 @import "./layout/page-list";
 @import "./layout/pagination-box";
 
 @import "./pages/category";
+@import "./pages/auth";
 
 @font-face {
   font-family: "porto";

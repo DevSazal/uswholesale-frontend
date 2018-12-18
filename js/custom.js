@@ -91,3 +91,27 @@
     scrollbarDiv.innerHTML = "You need Webkit browser to run this code";
   }
 })();
+
+(function($) {
+  $(document).ready(function() {
+    var auth_value = $("input[name=auth]:checked").val();
+    renderDom(auth_value);
+  });
+})(jQuery);
+
+(function($) {
+  $('input[name="auth"]:radio').change(function() {
+    var auth_value = $("input[name='auth']:checked").val();
+    renderDom(auth_value);
+  });
+})(jQuery);
+
+function renderDom(auth_value) {
+  if (auth_value === "login") {
+    $("#login").show();
+    $("#signup").hide();
+  } else if (auth_value === "signup") {
+    $("#login").hide();
+    $("#signup").show();
+  }
+}
