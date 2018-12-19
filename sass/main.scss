@@ -905,7 +905,11 @@ header {
 #searchbox-inner {
   margin: 0;
 }
-
+#home-search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #home-search form .text {
   padding: 4px 10px 5px 10px;
   border-top: 1px solid $color-primary;
@@ -966,7 +970,6 @@ header {
   position: relative;
   //   color: $default-font-color;
   border: 1px solid $color-primary;
-  border-right: none;
   font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   -webkit-border-radius: 0;

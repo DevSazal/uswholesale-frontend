@@ -2461,6 +2461,11 @@ header {
 #searchbox-inner {
   margin: 0; }
 
+#home-search form {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 #home-search form .text {
   padding: 4px 10px 5px 10px;
   border-top: 1px solid #55c57a;
@@ -2514,7 +2519,6 @@ header {
   min-width: 17rem;
   position: relative;
   border: 1px solid #55c57a;
-  border-right: none;
   font-family: "Open Sans", sans-serif;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
