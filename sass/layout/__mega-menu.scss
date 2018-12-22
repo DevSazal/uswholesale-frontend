@@ -702,7 +702,8 @@
 .menu.menu-vertical > li:hover > a,
 .menu.menu-vertical > li.show > a,
 .menu.menu-vertical > li.active > a {
-  color: #fff;
+  color: #465157;
+  border-top: none; 
 
   // background-image: linear-gradient(to right, #7ed56f, #55c57a, #55c57a);
 }
